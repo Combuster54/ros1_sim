@@ -7,5 +7,4 @@
     <node name="web_video_server" pkg="web_video_server" type="web_video_server">
         <param name="port" value="11315" />
     </node>
-
 </launch>
