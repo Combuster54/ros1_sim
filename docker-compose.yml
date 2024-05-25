@@ -14,7 +14,7 @@ services:
       - "11311"
 
   tortoisebot-ros1-gazebo:
-    image: tortoisebot-ros1-gazebo
+    image: combuster54/tortoisebot:noetic-gazebo
     container_name: tortoisebot-ros1-gazebo_1
     build: 
       context: .
@@ -31,7 +31,7 @@ services:
     restart: "always" 
 
   tortoisebot-ros1-slam:
-    image: tortoisebot-ros1-slam
+    image: combuster54/tortoisebot:noetic-slam
     container_name: tortoisebot-ros1-slam_1
     build: 
       context: .
@@ -48,7 +48,7 @@ services:
     restart: "always"
 
   tortoisebot_waypoints:
-    image: tortoisebot-ros1-waypoints
+    image: combuster54/tortoisebot:noetic-waypoints-action-server
     container_name: tortoisebot-ros1-waypoints_1
     build: 
       context: . 
@@ -63,7 +63,7 @@ services:
     restart: "always"  
 
   tortoisebot_webapp:
-    image: tortoisebot-ros1-webapp
+    image: combuster54/tortoisebot:noetic-webapp
     container_name: tortoisebot-ros1-webapp_1
     build: 
       context: . 
